@@ -1,0 +1,67 @@
+/*
+ * global site styles
+ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+hp-content {
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+
+hp-presentation>hp-slide {
+  display: none;
+}
+
+hp-presentation>hp-slide.active {
+  display: inline-block;
+}
+
+hp-presentation {
+  display: block;
+  background-color: #fff;
+
+  width: 80vmin;
+  height: 80vmin;
+
+  border: .2em solid #000;
+  border-radius: 1em;
+}
+
+hp-slide {
+  display: inline-block;
+
+  width: 80%;
+  height: 80%;
+
+  margin: 10%;
+
+  font-size: 8vmin;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+hp-chooser {
+  display: flex;
+  width: 100%;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+hp-chooser * {
+  max-width: 20%;
+
+  margin: 5% 2.5%;
+}
